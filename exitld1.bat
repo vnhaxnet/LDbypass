@@ -4,6 +4,7 @@
 @cd/d "E:\XuanZhi\LDPlayer"
 @cd/d "F:\XuanZhi\LDPlayer"
 @cd/d "Y:\XuanZhi\LDPlayer"
+@cd/d "H:\XuanZhi\LDPlayer"
 dnconsole.exe killapp --index 0 --packagename "com.vng.pubgmobile"
 dnconsole.exe killapp --index 0 --packagename "com.tencent.ig"
 dnconsole.exe killapp --index 0 --packagename "com.pubg.krmobile"
