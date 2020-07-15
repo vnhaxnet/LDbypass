@@ -1,0 +1,10 @@
+@echo off
+@cd/d "C:\XuanZhi\LDPlayer"
+@cd/d "D:\XuanZhi\LDPlayer"
+@cd/d "E:\XuanZhi\LDPlayer"
+@cd/d "F:\XuanZhi\LDPlayer"
+@cd/d "Y:\XuanZhi\LDPlayer"
+dnconsole.exe killapp --index 0 --packagename "com.vng.pubgmobile"
+dnconsole.exe killapp --index 0 --packagename "com.tencent.ig"
+dnconsole.exe killapp --index 0 --packagename "com.pubg.krmobile"
+dnconsole.exe killapp --index 0 --packagename "com.rekoo.pubgm"
