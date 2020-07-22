@@ -1,7 +1,8 @@
 @echo off
 @cd/d "C:\XuanZhi\LDPlayer"
-dnconsole launch --index 0
 @cd/d "D:\XuanZhi\LDPlayer"
-dnconsole launch --index 0
 @cd/d "E:\XuanZhi\LDPlayer"
+@cd/d "F:\XuanZhi\LDPlayer"
+@cd/d "Y:\XuanZhi\LDPlayer"
+@cd/d "H:\XuanZhi\LDPlayer"
 dnconsole launch --index 0
