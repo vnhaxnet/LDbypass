@@ -1,0 +1,6 @@
+netsh advfirewall firewall delete rule name=CRNTeam
+netsh advfirewall firewall delete rule name=CRNTeam2
+netsh advfirewall firewall delete rule name=CRNTeam3
+netsh advfirewall firewall delete rule name=CRNTeam4
+netsh advfirewall firewall delete rule name=CRNTeam5
+netsh advfirewall firewall delete rule name=CRNTeam6
