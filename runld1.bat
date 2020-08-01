@@ -5,4 +5,4 @@
 @cd/d "F:\XuanZhi\LDPlayer"
 @cd/d "Y:\XuanZhi\LDPlayer"
 @cd/d "H:\XuanZhi\LDPlayer"
-dnconsole launch --index 0
+dnconsole launch --index 1
