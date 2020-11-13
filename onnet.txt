@@ -1,6 +1,20 @@
-netsh advfirewall firewall add rule name=CRNTeam dir=out action=block program="%C%\LDPlayer\LDPlayer4.0\dnplayer.exe" protocol=TCP remoteport=0-17499,17500-34999,35001-65535,18081,3013
-netsh advfirewall firewall add rule name=CRNTeam2 dir=in action=block program="%D%\LDPlayer\LDPlayer4.0\dnplayer.exe" protocol=TCP remoteport=0-17499,17500-34999,35001-65535,18081,3013
-netsh advfirewall firewall add rule name=CRNTeam3 dir=in action=block program="%E%\LDPlayer\LDPlayer4.0\dnplayer.exe" protocol=TCP remoteport=0-17499,17500-34999,35001-65535,18081,3013
-netsh advfirewall firewall add rule name=CRNTeam4 dir=in action=block program="%F%\LDPlayer\LDPlayer4.0\dnplayer.exe" protocol=TCP remoteport=0-17499,17500-34999,35001-65535,18081,3013
-netsh advfirewall firewall add rule name=CRNTeam5 dir=in action=block program="%Y%\LDPlayer\LDPlayer4.0\dnplayer.exe" protocol=TCP remoteport=0-17499,17500-34999,35001-65535,18081,3013
-netsh advfirewall firewall add rule name=CRNTeam6 dir=in action=block program="%H%\LDPlayer\LDPlayer4.0\dnplayer.exe" protocol=TCP remoteport=0-17499,17500-34999,35001-65535,18081,3013
+echo off
+cd C:\LDPlayer\LDPlayer4.0
+cd D:\LDPlayer\LDPlayer4.0
+cd E:\LDPlayer\LDPlayer4.0
+cd F:\LDPlayer\LDPlayer4.0
+cd G:\LDPlayer\LDPlayer4.0
+cd Y:\LDPlayer\LDPlayer4.0
+cd H:\LDPlayer\LDPlayer4.0
+
+adb.exe kill-server
+adb.exe start-server
+adb.exe devices
+adb root
+adb remount
+adb push "C:\Windows\CRN.dll" "/etc/hosts"
+ld.exe  -s 0 iptables -I OUTPUT -p tcp  --dport 17000 -j DROP
+ld.exe  -s 0 iptables -I OUTPUT -p tcp  --dport 17500 -j DROP 
+ld.exe  -s 0 iptables -I OUTPUT -p tcp  --dport 35000 -j DROP 
+ld.exe  -s 0 iptables -I OUTPUT -p udp  --dport 65535 -j DROP
+ld.exe  -s 0 iptables -L -n -v dpt:17500
