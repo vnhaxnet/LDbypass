@@ -1,6 +1,6 @@
-netsh advfirewall firewall add rule name=CRNTeam dir=out action=block program="%C%\XuanZhi\LDPlayer\dnplayer.exe" protocol=TCP remoteport=0-17499,17500-34999,35001-65535,18081,3013
-netsh advfirewall firewall add rule name=CRNTeam2 dir=in action=block program="%D%\XuanZhi\LDPlayer\dnplayer.exe" protocol=TCP remoteport=0-17499,17500-34999,35001-65535,18081,3013
-netsh advfirewall firewall add rule name=CRNTeam3 dir=in action=block program="%E%\XuanZhi\LDPlayer\dnplayer.exe" protocol=TCP remoteport=0-17499,17500-34999,35001-65535,18081,3013
-netsh advfirewall firewall add rule name=CRNTeam4 dir=in action=block program="%F%\XuanZhi\LDPlayer\dnplayer.exe" protocol=TCP remoteport=0-17499,17500-34999,35001-65535,18081,3013
-netsh advfirewall firewall add rule name=CRNTeam5 dir=in action=block program="%Y%\XuanZhi\LDPlayer\dnplayer.exe" protocol=TCP remoteport=0-17499,17500-34999,35001-65535,18081,3013
-netsh advfirewall firewall add rule name=CRNTeam6 dir=in action=block program="%H%\XuanZhi\LDPlayer\dnplayer.exe" protocol=TCP remoteport=0-17499,17500-34999,35001-65535,18081,3013
+netsh advfirewall firewall add rule name=CRNTeam dir=out action=block program="%C%\LDPlayer\LDPlayer4.0\dnplayer.exe" protocol=TCP remoteport=0-17499,17500-34999,35001-65535,18081,3013
+netsh advfirewall firewall add rule name=CRNTeam2 dir=in action=block program="%D%\LDPlayer\LDPlayer4.0\dnplayer.exe" protocol=TCP remoteport=0-17499,17500-34999,35001-65535,18081,3013
+netsh advfirewall firewall add rule name=CRNTeam3 dir=in action=block program="%E%\LDPlayer\LDPlayer4.0\dnplayer.exe" protocol=TCP remoteport=0-17499,17500-34999,35001-65535,18081,3013
+netsh advfirewall firewall add rule name=CRNTeam4 dir=in action=block program="%F%\LDPlayer\LDPlayer4.0\dnplayer.exe" protocol=TCP remoteport=0-17499,17500-34999,35001-65535,18081,3013
+netsh advfirewall firewall add rule name=CRNTeam5 dir=in action=block program="%Y%\LDPlayer\LDPlayer4.0\dnplayer.exe" protocol=TCP remoteport=0-17499,17500-34999,35001-65535,18081,3013
+netsh advfirewall firewall add rule name=CRNTeam6 dir=in action=block program="%H%\LDPlayer\LDPlayer4.0\dnplayer.exe" protocol=TCP remoteport=0-17499,17500-34999,35001-65535,18081,3013
