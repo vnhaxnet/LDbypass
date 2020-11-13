@@ -1,10 +1,11 @@
-@echo
-@cd/d "C:\XuanZhi\LDPlayer"
-@cd/d "D:\XuanZhi\LDPlayer"
-@cd/d "E:\XuanZhi\LDPlayer"
-@cd/d "F:\XuanZhi\LDPlayer"
-@cd/d "Y:\XuanZhi\LDPlayer"
-@cd/d "H:\XuanZhi\LDPlayer"
+echo off
+cd "C:\LDPlayer\LDPlayer4.0"
+cd "D:\LDPlayer\LDPlayer4.0"
+cd "E:\LDPlayer\LDPlayer4.0"
+cd "F:\LDPlayer\LDPlayer4.0"
+cd "Y:\LDPlayer\LDPlayer4.0"
+cd "H:\LDPlayer\LDPlayer4.0"
+
 ld.exe -s 0 "mount -o remount,rw /"
 ld.exe -s 0 "mount -o remount,rw /system"
 ld.exe -s 0 "mount -o remount,rw /data"
@@ -39,3 +40,4 @@ ld.exe -s 0 "rm -rf /data/data/com.tencent.ig/files"
 ld.exe -s 0 "rm -rf /data/data/com.tencent.ig/shared_prefs"
 ld.exe -s 0 "rm -rf /data/data/com.tencent.ig/databases"
 ld.exe -s 0 "busybox mount --bind /sbin /system/etc/security/cacerts"
+pause
