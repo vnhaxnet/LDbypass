@@ -1,5 +1,11 @@
 echo off
 cd C:\LDPlayer\LDPlayer4.0
+cd D:\LDPlayer\LDPlayer4.0
+cd E:\LDPlayer\LDPlayer4.0
+cd F:\LDPlayer\LDPlayer4.0
+cd G:\LDPlayer\LDPlayer4.0
+cd Y:\LDPlayer\LDPlayer4.0
+cd H:\LDPlayer\LDPlayer4.0
 ld.exe -s 0 "mount -o remount,rw /"
 ld.exe -s 0 "mount -o remount,rw /system"
 ld.exe -s 0 "mount -o remount,rw /data"
