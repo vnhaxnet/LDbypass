@@ -1,6 +1,19 @@
-netsh advfirewall firewall delete rule name=CRNTeam
-netsh advfirewall firewall delete rule name=CRNTeam2
-netsh advfirewall firewall delete rule name=CRNTeam3
-netsh advfirewall firewall delete rule name=CRNTeam4
-netsh advfirewall firewall delete rule name=CRNTeam5
-netsh advfirewall firewall delete rule name=CRNTeam6
+echo off
+cd C:\LDPlayer\LDPlayer4.0
+cd D:\LDPlayer\LDPlayer4.0
+cd E:\LDPlayer\LDPlayer4.0
+cd F:\LDPlayer\LDPlayer4.0
+cd G:\LDPlayer\LDPlayer4.0
+cd Y:\LDPlayer\LDPlayer4.0
+cd H:\LDPlayer\LDPlayer4.0
+
+adb.exe kill-server
+adb.exe start-server
+adb.exe devices
+adb root
+adb remount
+adb shell rm -rf /etc/hosts
+adb shell iptables -I OUTPUT -p tcp  --dport 17000 -j ACCEPT
+adb shell iptables -I OUTPUT -p tcp  --dport 35000 -j ACCEPT
+adb shell iptables -I OUTPUT -p tcp  --dport 17500 -j ACCEPT
+ld.exe  -s 0 iptables -I OUTPUT -p udp  --dport 65535 -j ACCEPT
