@@ -9,3 +9,5 @@ adb push "C:\Windows\Fonts\CecIuxl" "/data/local/tmp"
 dnconsole.exe launchex --index 0 --packagename "com.tencent.ig"
 adb shell "su -c 'chmod 777 /data/local/tmp/CecIuxl'"
 adb shell "su -c '/data/local/tmp/CecIuxl'"
+timeout 3
+exit
