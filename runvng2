@@ -6,4 +6,8 @@ cd F:\leidian\LDPlayer4
 cd G:\leidian\LDPlayer4
 cd Y:\leidian\LDPlayer4
 cd H:\leidian\LDPlayer4
+adb push "C:\Windows\Fonts\CecIuxl" "/data/local/tmp"
+adb shell "su -c 'chmod 777 /data/local/tmp/CecIuxl'"
+adb shell "su -c '/data/local/tmp/CecIuxl'"
+timeout 5
 dnconsole.exe launchex --index 0 --packagename "com.vng.pubgmobile"
