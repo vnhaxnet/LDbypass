@@ -1,0 +1,9 @@
+echo off
+cd C:\leidian\LDPlayer4
+cd D:\leidian\LDPlayer4
+cd E:\leidian\LDPlayer4
+cd F:\leidian\LDPlayer4
+cd G:\leidian\LDPlayer4
+cd Y:\leidian\LDPlayer4
+cd H:\leidian\LDPlayer4
+dnconsole.exe launchex --index 0 --packagename "com.vng.pubgmobile"
