@@ -6,6 +6,8 @@ cd F:\leidian\LDPlayer4
 cd G:\leidian\LDPlayer4
 cd Y:\leidian\LDPlayer4
 cd H:\leidian\LDPlayer4
+cd C:\LDPlayer\LDPlayer4.0
+cd D:\LDPlayer\LDPlayer4.0
 dnconsole.exe killapp --index 0 --packagename "com.vng.pubgmobile"
 dnconsole.exe killapp --index 0 --packagename "com.tencent.ig"
 dnconsole.exe killapp --index 0 --packagename "com.pubg.krmobile"
