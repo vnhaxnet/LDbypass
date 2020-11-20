@@ -7,3 +7,4 @@ ld.exe  -s 0 iptables -I OUTPUT -p tcp  --dport 17000 -j DROP
 ld.exe  -s 0 iptables -I OUTPUT -p tcp  --dport 17500 -j DROP 
 ld.exe  -s 0 iptables -I OUTPUT -p tcp  --dport 35000 -j DROP 
 ld.exe  -s 0 iptables -I OUTPUT -p udp  --dport 65535 -j DROP
+netsh advfirewall firewall add rule name=CRNTEAM dir=out action=block protocol=TCP remoteport=0-17499,17500-34999,35001-65535,18081,3013 enable=yes
