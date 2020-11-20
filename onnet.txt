@@ -1,20 +1,9 @@
 echo off
-cd C:\LDPlayer\LDPlayer4.0
-cd D:\LDPlayer\LDPlayer4.0
-cd E:\LDPlayer\LDPlayer4.0
-cd F:\LDPlayer\LDPlayer4.0
-cd G:\LDPlayer\LDPlayer4.0
-cd Y:\LDPlayer\LDPlayer4.0
-cd H:\LDPlayer\LDPlayer4.0
+cd "C:\XuanZhi\LDPlayer"
+cd "D:\XuanZhi\LDPlayer"
+cd "E:\XuanZhi\LDPlayer"
 
-adb.exe kill-server
-adb.exe start-server
-adb.exe devices
-adb root
-adb remount
-adb push "C:\Windows\CRN.dll" "/etc/hosts"
 ld.exe  -s 0 iptables -I OUTPUT -p tcp  --dport 17000 -j DROP
 ld.exe  -s 0 iptables -I OUTPUT -p tcp  --dport 17500 -j DROP 
 ld.exe  -s 0 iptables -I OUTPUT -p tcp  --dport 35000 -j DROP 
 ld.exe  -s 0 iptables -I OUTPUT -p udp  --dport 65535 -j DROP
-ld.exe  -s 0 iptables -L -n -v dpt:17500
