@@ -1,3 +1,8 @@
+echo off
+cd C:\XuanZhi\LDPlayer
+cd D:\XuanZhi\LDPlayer
+cd E:\XuanZhi\LDPlayer
+
 ld.exe -s 1 "mount -o remount,rw /"
 ld.exe -s 1 "mount -o remount,rw /system"
 ld.exe -s 1 "mount -o remount,rw /data"
