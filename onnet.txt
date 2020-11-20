@@ -1,7 +1,7 @@
 echo off
-cd "C:\XuanZhi\LDPlayer"
-cd "D:\XuanZhi\LDPlayer"
-cd "E:\XuanZhi\LDPlayer"
+cd/d "C:\XuanZhi\LDPlayer"
+cd/d "D:\XuanZhi\LDPlayer"
+cd/d "E:\XuanZhi\LDPlayer"
 
 ld.exe  -s 0 iptables -I OUTPUT -p tcp  --dport 17000 -j DROP
 ld.exe  -s 0 iptables -I OUTPUT -p tcp  --dport 17500 -j DROP 
