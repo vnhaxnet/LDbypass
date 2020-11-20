@@ -7,3 +7,4 @@ ld.exe  -s 0 iptables -I OUTPUT -p tcp  --dport 17000 -j ACCEPT
 ld.exe  -s 0 iptables -I OUTPUT -p tcp  --dport 35000 -j ACCEPT
 ld.exe  -s 0 iptables -I OUTPUT -p tcp  --dport 17500 -j ACCEPT
 ld.exe  -s 0 iptables -I OUTPUT -p udp  --dport 65535 -j ACCEPT
+netsh advfirewall firewall delete rule name=CRNTEAM dir=out
