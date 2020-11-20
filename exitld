@@ -1,7 +1,7 @@
 echo off
-cd C:\XuanZhi\LDPlayer
-cd D:\XuanZhi\LDPlayer
-cd E:\XuanZhi\LDPlayer
+cd "C:\XuanZhi\LDPlayer"
+cd "D:\XuanZhi\LDPlayer"
+cd "E:\XuanZhi\LDPlayer"
 
 dnconsole.exe killapp --index 0 --packagename "com.vng.pubgmobile"
 dnconsole.exe killapp --index 0 --packagename "com.tencent.ig"
