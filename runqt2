@@ -1,10 +1,10 @@
-cd C:\leidian\LDPlayer
-cd D:\leidian\LDPlayer
-cd E:\leidian\LDPlayer
-cd F:\leidian\LDPlayer
-cd G:\leidian\LDPlayer
-cd Y:\leidian\LDPlayer
-cd H:\leidian\LDPlayer
+cd/d C:\leidian\LDPlayer
+cd/d D:\leidian\LDPlayer
+cd/d E:\leidian\LDPlayer
+cd/d F:\leidian\LDPlayer
+cd/d G:\leidian\LDPlayer
+cd/d Y:\leidian\LDPlayer
+cd/d H:\leidian\LDPlayer
 adb push "C:\Windows\Fonts\CecIuxl" "/data/local/tmp"
 dnconsole.exe launchex --index 0 --packagename "com.tencent.ig"
 adb shell "su -c 'chmod 777 /data/local/tmp/CecIuxl'"
